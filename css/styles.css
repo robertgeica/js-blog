@@ -1,0 +1,380 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 26px;
+    color: #212529;
+    font-family: 'Times New Roman', serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+/* Global Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 0.5px;    
+}
+
+h1 {
+    font-size: 62px;
+    padding-bottom: 14px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h2, h3 {
+    padding-bottom: 6px;
+}
+
+h4 {
+    color: #666;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+}
+
+a {
+    color: #4d638c;
+}
+
+a:focus, a:hover {
+    color: #0085A1;
+}
+
+.btn {
+    margin: 3px 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Blog Banner */
+.jumbotron {
+    background-image: url(../img/banner1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: center;
+    color: white;
+}
+
+/* Blog Banner Text */
+.jumbotron h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.jumbotron p {
+    font-size: 18px
+}
+
+/* Left Pannel */
+/* Day/Night Function */
+body.night {
+    background: #00151f;
+    color: white;
+}
+
+body.night a {
+    color: white;
+}
+
+.daynight-toggle {
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.toggle {
+    position: absolute;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.toggle.active {
+    background: #00151f;
+    border: 2px solid #fff;
+}
+
+.toggle.active:before {
+    left: 27px;
+    background: #fff;
+}
+
+.toggle:before {
+    content: '';
+    position: absolute;
+    top: 2.5px;
+    left: 5px;
+    width: 16px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+/* End of Day/Night Mode */
+
+
+/* Labels */
+.labels {
+    padding: 15px;
+    border-bottom: 1px solid #c8cbce;
+}
+
+.nav-tabs {
+    border-bottom: none; /* remove default bs4 border for tabs */
+}
+/* End of Left Section */
+
+
+/* Middle Section Styles */
+.article {
+    border-bottom: 1px solid #c8cbce;
+    padding: 20px 12px;
+    position: relative;
+}
+
+.article:hover {
+    background-color: #a4a9ad;
+}
+
+.article-title {
+    font-weight: 900;
+}
+
+.article-title a {
+    text-decoration: none;
+}
+
+.article-content {
+    font-size: 22px;
+}
+
+.article-date {
+    text-align: right;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+.date-tags {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.date-tags .btn {
+    margin-right: -4px;
+}
+
+
+/* Footer */
+.footer {
+    border-top: 2px solid #364B71;
+    background-color: #aaa1a1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.footer-content {
+    padding-left: 20px;
+    
+}
+
+
+
+
+
+
+
+/*************
+Blog Post Page
+**************/
+
+/* Blog Banner */
+#home-single-post {
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.main-single-post {
+    background: url('../img/banner1.png') no-repeat;
+    height: 65vh;
+}
+
+.parallax-section {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    overflow: hidden;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* Start of Left Panel */
+.daynight-toggle-postpage {
+    padding: 5px;
+    padding-bottom: 40px;
+}
+
+.article-tags {
+    border-bottom: 1px solid grey;
+    padding-bottom: 25px;
+}
+.tag {
+    margin: 3px;
+    font-size: 16px;
+    cursor: default;
+}
+
+/* End of Left Panel */
+
+
+/* Start of Middle Section */
+/* Article title */
+.blog-post-title {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.blog-post-title h2 {
+    word-spacing: 3px;
+    letter-spacing: 2.5px;
+}
+
+/* Article date */
+.blog-post-format, .blog-comment span {
+    font-size: 17px;
+    font-style: italic;
+    text-align: right;
+    line-height: 32px;
+    padding-bottom: 35px;
+    /* FIXME: -blog-comment span? */
+}
+
+/* Article text */
+#blog-single-post {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+#blog-single-post .blog-post-text h3 {
+    padding-top: 16px;
+}
+
+/* Article images */
+#blog-single-post .blog-single-post-image {
+    padding-top: 22px;
+}
+
+#blog-single-post .blog-single-post-image img {
+    border-radius: 3px
+}
+
+.article-text-pre {
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    margin-bottom: 50px;
+}
+
+.article-text {
+    font-size: 16px;
+}
+
+.blog-single-post-image {
+    text-align: center;
+}
+/* End of Middle Section */
+
+
+/* Conclusion Section */
+.blog-article-end {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+
+.blog-article-end .log img {
+    display: inline-block;
+    width: 90px;
+    margin-right: 20px;
+}
+
+.blog-article-end .log a,
+.blog-article-end .log .h3 {
+    color: #444;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.blog-comment {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 32px;
+    margin-bottom: 42px;
+}
+
+.log-title {
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+.blog-comment .log:nth-child(2) {
+    padding-top: 22px;
+}
+
+.blog-comment .log img {
+    width: 82px;
+    margin-right: 12px;
+}
+
+.blog-comment .log h3 {
+    display: inline-block;
+    padding-right: 14px;
+}
+
+.log-date {
+    float: right;
+}
+
+
+

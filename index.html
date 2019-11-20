@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>Programming Blog</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Blog Banner -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>Code Blog</h1>
+            <hr style="background-color:rgba(245, 245, 245, .6);">
+            <p>Articles about Java, JavaScript, CSS, HTML, Bootstrap, Sass, Less.</p>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Left Pannel-->
+            <div class="col-md-3">
+
+                <!-- Day/Night Function -->
+                <div class="daynight-toggle">
+                    <div class="toggle"></div>        
+                </div>        
+
+                <!-- Create sort labels for articles -->
+                <div class="labels">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active btn btn-warning" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All articles</button>
+                        </li>
+
+                        <li class="nav-item">
+                          <button class="nav-link active btn btn-primary" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="java" aria-selected="true">Java</button>
+                        </li>
+
+                        <li class="nav-item">
+                          <button class="nav-link btn btn-secondary" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="false">JavaScript</button>
+                        </li>
+
+                        <li class="nav-item">
+                          <button class="nav-link btn btn-danger" id="bs-tab" data-toggle="tab" href="#bs" role="tab" aria-controls="bs" aria-selected="false">Bootstrap</button>
+                        </li>
+
+                        <li class="nav-item">
+                          <button class="nav-link btn btn-info" id="sass-tab" data-toggle="tab" href="#sass" role="tab" aria-controls="sass" aria-selected="false">Sass</button>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-success" id="git-tab" data-toggle="tab" href="#git" role="tab" aria-controls="git" aria-selected="false">Git</button>
+                          </li>
+
+                          <li class="nav-item">
+                            <button class="nav-link btn btn-warning" id="linux-tab" data-toggle="tab" href="#linux" role="tab" aria-controls="linux" aria-selected="false">Linux</button>
+                          </li>
+
+                          <li class="nav-item">
+                            <button class="nav-link btn btn-light" id="css-tab" data-toggle="tab" href="#css" role="tab" aria-controls="css" aria-selected="false">CSS</button>
+                          </li>
+
+                          <li class="nav-item">
+                            <button class="nav-link btn btn-dark" id="less-tab" data-toggle="tab" href="#less" role="tab" aria-controls="less" aria-selected="false">Less</button>
+                          </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- End of Left Pannel-->
+
+            <!-- Middle Section-->
+            <div class="col-md-8">
+                
+                <!-- Default posts -->
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade show active">
+                        <div class="article">
+                            <h3 class="article-title">
+                                <a href="single-post.html">Welcome to Programming Blog</a>
+                            </h3>
+                            <br>
+                            <p class="article-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                            <div class="date-tags">
+                                <button class="btn btn-primary article-tag" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="java" aria-selected="true">Java</button>
+                                <button class="btn btn-secondary article-tag" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="true">JavaScript</button>
+                                <button class="btn btn-danger article-tag" id="bs-tab" data-toggle="tab" href="#bs" role="tab" aria-controls="bs" aria-selected="true">Bootstrap</button>
+                                <button class="btn btn-info article-tag" id="sass-tab" data-toggle="tab" href="#sass" role="tab" aria-controls="sass" aria-selected="true">Sass</button>
+
+                                <time class="article-date float-right" datetime=" 2019-02-18">Feb 18, 2019</time>
+                            </div>
+                        </div> 
+                    </div>
+
+
+
+                <!-- Articles by labels-->
+                <!--Java-->
+                <div id="java" class="tab-pane fade show active">
+
+                    <div class="article ">
+                        <h3 class="article-title">
+                            <a href="#">Java Object Oriented Programming</a>
+                        </h3>
+                        <br>
+                        <p class="article-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <div class="date-tags">
+                            <button class="btn btn-primary" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="java" aria-selected="true">Java</button>
+                            <button class="btn btn-secondary" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="true">JavaScript</button>
+                            <button class="btn btn-danger" id="bs-tab" data-toggle="tab" href="#bs" role="tab" aria-controls="bs" aria-selected="true">Bootstrap</button>
+                            <button class="btn btn-info" id="sass-tab" data-toggle="tab" href="#sass" role="tab" aria-controls="sass" aria-selected="true">Sass</button>
+
+                            <time class="article-date float-right" datetime=" 2019-02-18">Feb 18, 2019</time>
+                        </div>
+                    </div>
+
+                    <div class="article ">
+                        <h3 class="article-title">
+                            <a href="#">Java Arrays</a>
+                        </h3>
+                        <br>
+                        <p class="article-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <div class="date-tags">
+                            <button class="btn btn-primary" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="java" aria-selected="true">Java</button>
+                            <button class="btn btn-secondary" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="true">JavaScript</button>
+        
+                            <time class="article-date float-right" datetime=" 2019-02-18">Feb 18, 2019</time>
+                        </div>
+                    </div>
+
+                    <div class="article ">
+                        <h3 class="article-title">
+                            <a href="#">Java in-browser</a>
+                        </h3>
+                        <br>
+                        <p class="article-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <div class="date-tags">
+                            <button class="btn btn-primary" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="java" aria-selected="true">Java</button>
+                            <button class="btn btn-secondary" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="true">JavaScript</button>
+            
+                            <time class="article-date float-right" datetime=" 2019-02-18">Feb 18, 2019</time>
+                        </div>
+                    </div>
+
+                </div>
+
+                    <!--Bootstrap-->
+                    <div id="bs" class="tab-pane fade show active">
+
+                        <div class="article">
+                            <h3 class="article-title">
+                                <a href="">Bootstrap Grid System</a>
+                            </h3>
+                            <br>
+                            <p class="article-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <div class="date-tags">
+                                <button class="btn btn-primary" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="java" aria-selected="true">Java</button>
+                                <button class="btn btn-danger" id="bs-tab" data-toggle="tab" href="#bs" role="tab" aria-controls="bs" aria-selected="true">Bootstrap</button>
+                    
+                                <time class="article-date float-right" datetime=" 2019-02-18">Feb 18, 2019</time>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <h3 class="article-title">
+                                <a href="">Bootstrap Grid System</a>
+                            </h3>
+                            <br>
+                            <p class="article-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <div class="date-tags">
+                                <button class="btn btn-primary" id="java-tab" data-toggle="tab" href="#java" role="tab" aria-controls="java" aria-selected="true">Java</button>
+                                <button class="btn btn-danger" id="bs-tab" data-toggle="tab" href="#bs" role="tab" aria-controls="bs" aria-selected="true">Bootstrap</button>
+                        
+                                <time class="article-date float-right" datetime=" 2019-02-18">Feb 18, 2019</time>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--JavaScript-->
+                    <div id="js" class="tab-pane fade show active">
+
+                        <div class="article">
+                            <h3 class="article-title">
+                                <a href="">JavaScript Arrays</a>
+                            </h3>
+                            <br>
+                            <p class="article-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <div class="date-tags">
+                                <button class="btn btn-secondary" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="true">JavaScript</button>
+                                <button class="btn btn-danger" id="bs-tab" data-toggle="tab" href="#bs" role="tab" aria-controls="bs" aria-selected="true">Bootstrap</button>
+                        
+                                <time class="article-date float-right" datetime=" 2019-02-18">Feb 18, 2019</time>
+                            </div>
+                        </div>    
+
+                        <div class="article">
+                            <h3 class="article-title">
+                                <a href="">JavaScript Objects</a>
+                            </h3>
+                            <br>
+                            <p class="article-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <div class="date-tags">
+                                <button class="btn btn-secondary" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="true">JavaScript</button>
+                                <button class="btn btn-danger" id="bs-tab" data-toggle="tab" href="#bs" role="tab" aria-controls="bs" aria-selected="true">Bootstrap</button>
+                        
+                                <time class="article-date float-right" datetime=" 2019-02-18">Feb 18, 2019</time>
+                            </div>
+                        </div>    
+
+
+                        <div class="article">
+                            <h3 class="article-title">
+                                <a href="">JavaScript Lists</a>
+                            </h3>
+                            <br>
+                            <p class="article-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <div class="date-tags">
+                                <button class="btn btn-secondary" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="true">JavaScript</button>
+                                <button class="btn btn-danger" id="bs-tab" data-toggle="tab" href="#bs" role="tab" aria-controls="bs" aria-selected="true">Bootstrap</button>
+                        
+                                <time class="article-date float-right" datetime=" 2019-02-18">Feb 18, 2019</time>
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>   
+            </div>
+            <!-- End of Middle Section-->
+
+           
+        </div>
+    </div>
+
+    <div class="footer">
+    <!-- Footer -->
+        <footer class="page-footer font-small blue">
+
+        <!-- Footer Links -->
+            <div class="container-fluid text-center">
+
+                <div class="row">
+
+                    <div class="footer-content col-md-6 mt-md-0 mt-3">
+                        <h5 class="footer-title">x</h5>
+                    </div>
+
+                </div>
+
+            </div>
+    
+
+  
+        </footer>
+    </div>
+    <!-- Footer -->
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery/jquery.parallax.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom SCRIPTS -->
+    <script src="js/script.js"></script>
+
+
+
+   
+    
+</body>
+</html>
